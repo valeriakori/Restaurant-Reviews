@@ -11,7 +11,8 @@ body,td,th,p{
 }
 body {
 	background-color: #fdfdfd;
-	margin: 0;
+  margin: 0;
+  padding: 0;
 	position:relative;
 }
 ul, li {
@@ -141,18 +142,25 @@ nav h1 {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  width: 100%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  /* grid-gap:10px 10px; */
+  grid-column-gap: 20px;
 }
 #restaurants-list li {
+  display:block;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 15px;
   padding: 0 30px 25px;
+  width:100%;
 }
 #restaurants-list .restaurant-img {
-  display: block;
-  margin: 0;
-  max-width: 100%;
+  padding-top: 25px;
+  margin: 0 auto;
+  max-width: 75%;
 }
 #restaurants-list li h1 {
   color: #f18200;
