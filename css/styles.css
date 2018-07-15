@@ -196,7 +196,7 @@ nav h1 {
 
 @media screen and (min-width: 801px) {
   .inside #map-container {
-    background: blue none repeat scroll 0 0;
+    background: grey none repeat scroll 0 0;
     height: 87%;
     position: fixed;
     right: 0;
@@ -218,8 +218,8 @@ nav h1 {
 }
 .inside #footer {
   bottom: 0;
-  position: absolute;
-  width: 50%;
+  position: relative;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -253,7 +253,7 @@ nav h1 {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
-  width: 50%;
+  width: 45%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
@@ -283,6 +283,10 @@ nav h1 {
 #reviews-list li p {
   margin: 0 0 10px;
 }
+#reviews-list li p:first-child {
+  font-weight: bold;
+  font-size: 16px
+}
 #restaurant-hours td {
   color: #666;
 }
@@ -295,8 +299,8 @@ nav h1 {
   }
 
   #restaurants-list li {
-    height: 150px;
-    width:85%;
+    height: 175px;
+    width:90%;
     text-align: left;
     display: flex;
     justify-content: space-around;
@@ -304,16 +308,16 @@ nav h1 {
 
   #restaurants-list .restaurant-img {
 /*     max-width: 100%; */
+  padding-top: 25px;
     display:block;
     max-height: 75%;
     width: auto;
   }
-  #restaurants-list li div {
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-  }
 
+  #restaurants-list li div {
+    text-align: center;
+  }
+/* RESTAURANTS VIEW */
   .inside #map-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
@@ -326,7 +330,7 @@ nav h1 {
     height: 400px;
     width: 100%;
   }
-  #restaurant-container, #reviews-container {
+  #restaurant-container, #reviews-container, #restaurant-hours {
     padding:0;
     text-align: center;
     width:100%;
@@ -335,13 +339,18 @@ nav h1 {
     margin: 0 auto;
     padding: 0;
   }
+  #reviews-list li {
+    margin: 15px auto;
+  }
 
   #restaurant-cuisine {
     margin: 0 auto;
   }
   .inside #footer {
     bottom: 0;
-    position: absolute;
+    position: relative;
     width: 100%;
+    text-align: center;
+    padding:15px ;
   }
 }
