@@ -155,7 +155,7 @@ class DBHelper {
   /**
    * Restaurant image alt.
    */
-  static getRestaurantName(restaurant) {
+  static imageAltForRestaurant(restaurant) {
     return(restaurant.name);
   }
 
