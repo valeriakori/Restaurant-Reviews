@@ -17,9 +17,9 @@ let urlsToCache = [
     'img/7.jpg',
     'img/8.jpg',
     'img/9.jpg',
-    'img/10.jpg',    
+    'img/10.jpg'
     ];
-
+   
 self.addEventListener('install', (event) => {
     
     event.waitUntil(
@@ -28,7 +28,7 @@ self.addEventListener('install', (event) => {
             console.log('cache activated')
             return cache.addAll(urlsToCache);
         })
-        .catch((event) => console.log(event))
+        //.catch((event) => console.log(event))
     );
 });
 
